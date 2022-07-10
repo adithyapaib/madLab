@@ -2,20 +2,18 @@ package com.adithyapai.call;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
+
 
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.view.View;
+
 import android.widget.EditText;
-import android.widget.ImageButton;
+
 
 public class MainActivity extends AppCompatActivity {
     EditText phone;

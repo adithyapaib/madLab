@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F9F2ED"
     tools:context=".MainActivity">
 
     <EditText
@@ -13,34 +15,49 @@
         android:ems="10"
         android:hint="Enter Phone number"
         android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18dp"
+        app:backgroundTint="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32"
+        app:layout_constraintVertical_bias="0.375"
         tools:ignore="MissingConstraints" />
-
     <ImageButton
         android:id="@+id/call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="308dp"
+        android:background="@color/trnpt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/call"
+        app:srcCompat="@drawable/call"
         tools:ignore="MissingConstraints" />
-
     <ImageButton
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="272dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginBottom="300dp"
+        android:background="@color/trnpt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/save"
+        app:srcCompat="@drawable/save"
         tools:ignore="MissingConstraints" />
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
 </androidx.constraintlayout.widget.ConstraintLayout>
