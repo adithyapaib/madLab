@@ -13,7 +13,7 @@ import org.w3c.dom.Text;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-
+    TextToSpeech tt;
 
 
     @Override
@@ -22,12 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         EditText t = findViewById(R.id.text);
         Button b = findViewById(R.id.button);
-        TextToSpeech tt = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+
+         tt = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
           @Override
           public void onInit(int i) {
-              if(i != TextToSpeech.ERROR){
-                  tt.setLanguage(Locale.ENGLISH);
-              }
+                if(i == TextToSpeech.SUCCESS){
+                    tt.setLanguage(Locale.ENGLISH);
+                }
 
           }
       });
