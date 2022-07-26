@@ -29,9 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 wallpaperManager.setResource(R.drawable.a);
                 Thread.sleep(5000);
                 wallpaperManager.setResource(R.drawable.c);
+                Toast.makeText(this, "Done", 2).show();
+                return;
 
             } catch (IOException | InterruptedException e) {
+                Toast.makeText(this, "Done", 2).show();
                 e.printStackTrace();
+                return;
             }
 
         });
